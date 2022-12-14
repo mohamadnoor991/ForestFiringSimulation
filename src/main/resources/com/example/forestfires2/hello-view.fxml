@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.forestfires2.HelloController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+            <children>
+            <Button mnemonicParsing="false" onAction="#fireing" text="Firing Squares" />
+            <TextField fx:id="rsquareRandomN" prefHeight="26.0" prefWidth="118.0" promptText="rsquareRandomN">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+                <Button fx:id="changeColor" mnemonicParsing="false" onAction="#changeColor" text="Start Simulation" />
+            <Button mnemonicParsing="false" onAction="#resetSimulation" text="Reset" />
+                <Label prefHeight="42.0" prefWidth="126.0" text="Time of execution" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="timeExecution" prefHeight="26.0" prefWidth="58.0">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </TextField>
+                <Label text="Wile loop Counter" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="whileCounterText" prefHeight="26.0" prefWidth="60.0" />
+                <Label text=" Burned squares">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="squaresBurned" prefHeight="26.0" prefWidth="62.0" promptText="burned squares" />
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin></HBox>
+        <AnchorPane prefHeight="299.0" prefWidth="826.0">
+            <children>
+                <Rectangle fx:id="a" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="27.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+                <Rectangle fx:id="c" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="264.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+                <Rectangle fx:id="j" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="264.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+                <Rectangle fx:id="f" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="598.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+                <Rectangle fx:id="h" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="27.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+                <Rectangle fx:id="d" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="370.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+                <Rectangle fx:id="i" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="145.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+                <Rectangle fx:id="g" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="710.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+                <Rectangle fx:id="e" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="489.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+                <Rectangle fx:id="b" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="145.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+            <Rectangle fx:id="a1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="370.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+            <Rectangle fx:id="c1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="607.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+            <Rectangle fx:id="d1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="713.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+            <Rectangle fx:id="b1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="488.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
